@@ -21,10 +21,8 @@
     </div>
   </header>
 
-  <!-- ===== MAIN ===== -->
   <main class="main">
 
-    <!-- HOW IT WORKS FLOW -->
     <section class="card flow-card">
       <h2 class="section-title">How This Works</h2>
       <div class="flow">
@@ -39,8 +37,6 @@
         <div class="flow-step active"><div class="flow-icon">✅</div><div class="flow-label">Apply Scheme</div></div>
       </div>
     </section>
-
-    <!-- STEP 1: UPLOAD -->
     <section class="card">
       <h2 class="section-title">
         <span class="step-num">1</span>
@@ -71,7 +67,6 @@
         <p class="drop-note">Supports PNG, JPG, JPEG — Processed 100% locally. Never uploaded to any server.</p>
       </div>
 
-      <!-- Preview after upload -->
       <div class="preview-row" id="previewRow" style="display:none">
         <img id="imgPreview" alt="ID preview" />
         <div class="preview-meta">
@@ -85,7 +80,6 @@
       </div>
     </section>
 
-    <!-- STEP 2: PROGRESS -->
     <section class="card" id="progressCard" style="display:none">
       <h2 class="section-title">
         <span class="step-num">2</span>
@@ -106,7 +100,6 @@
       </div>
     </section>
 
-    <!-- STEP 3: EXTRACTED DATA -->
     <section class="card" id="extractedCard" style="display:none">
       <h2 class="section-title">
         <span class="step-num">3</span>
@@ -114,15 +107,12 @@
         <span class="confidence-badge" id="confidenceBadge"></span>
       </h2>
       <div class="extracted-grid" id="extractedGrid">
-        <!-- Filled by JS -->
       </div>
       <div class="raw-text-toggle">
         <button class="toggle-btn" onclick="toggleRaw()">📄 Show Raw OCR Text</button>
       </div>
       <pre class="raw-text" id="rawText" style="display:none"></pre>
     </section>
-
-    <!-- STEP 4: AUTO-FILLED FORM -->
     <section class="card" id="formCard" style="display:none">
       <h2 class="section-title">
         <span class="step-num">4</span>
@@ -199,7 +189,6 @@
       </div>
     </section>
 
-    <!-- STEP 5: SUCCESS -->
     <section class="card success-card" id="successCard" style="display:none">
       <div class="success-icon">🎉</div>
       <h2 class="success-title">Application Submitted!</h2>
@@ -208,7 +197,6 @@
       <button class="reset-btn" onclick="resetAll()">🔄 Process Another ID</button>
     </section>
 
-    <!-- STORAGE INFO -->
     <section class="card storage-card">
       <h2 class="section-title">📦 Where Is Your Data Stored?</h2>
       <div class="storage-table">
@@ -242,16 +230,13 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <p>🇮🇳 Scheme Sathi — Built for HackNova 3 | Jaya Engineering College | Team: Moulitha, Jothika, Dilli Basker, Mohan</p>
     <p>Tesseract.js OCR runs 100% in your browser. Your Aadhaar data never leaves your device.</p>
   </footer>
 
-  <!-- Load Tesseract.js from CDN -->
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 
-  <!-- Our OCR logic -->
   <script src="app.js"></script>
 
 </body>
