@@ -122,19 +122,16 @@ let extractedFields = {};    // stores the extracted data object (RAM)
 
 
 
-// Get DOM elements
 const fileInput  = document.getElementById('fileInput');
 const dropZone   = document.getElementById('dropZone');
 const previewRow = document.getElementById('previewRow');
 const imgPreview = document.getElementById('imgPreview');
 const extractBtn = document.getElementById('extractBtn');
 
-// When user picks a file via Browse button
 fileInput.addEventListener('change', function(e) {
   handleFile(e.target.files[0]);
 });
 
-// When user drags file over the drop zone — highlight it
 dropZone.addEventListener('dragover', function(e) {
   e.preventDefault();
   dropZone.classList.add('drag-over');
