@@ -58,7 +58,6 @@ const PATTERNS = {
 
 
 // ─────────────────────────────────────────────
-// PART 2: HELPER FUNCTIONS
 // ─────────────────────────────────────────────
 
 // Removes extra spaces and trims the text
@@ -66,8 +65,6 @@ function cleanText(text) {
   return text.replace(/\s+/g, ' ').trim();
 }
 
-// Tries each pattern one by one until it finds a match
-// Returns the matched text, or null if nothing found
 function extractField(text, patterns) {
   for (const pattern of patterns) {
     const match = text.match(pattern);
@@ -79,7 +76,6 @@ function extractField(text, patterns) {
   return null; // not found
 }
 
-// Detects which Indian state based on pincode's first 2 digits
 function detectStateFromPincode(pincode) {
   const pin = parseInt(pincode.replace(/\s/g, ''));
   const prefix = Math.floor(pin / 10000);
@@ -119,18 +115,12 @@ function detectStateFromPincode(pincode) {
 }
 
 
-// ─────────────────────────────────────────────
-// PART 3: STATE VARIABLES
-// ─────────────────────────────────────────────
 
 let currentFile = null;      // stores the image File object (RAM)
 let currentDocType = 'aadhaar'; // which ID type is selected
 let extractedFields = {};    // stores the extracted data object (RAM)
 
 
-// ─────────────────────────────────────────────
-// PART 4: FILE UPLOAD HANDLING
-// ─────────────────────────────────────────────
 
 // Get DOM elements
 const fileInput  = document.getElementById('fileInput');
