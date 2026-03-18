@@ -137,12 +137,10 @@ dropZone.addEventListener('dragover', function(e) {
   dropZone.classList.add('drag-over');
 });
 
-// When user drags file away — remove highlight
 dropZone.addEventListener('dragleave', function() {
   dropZone.classList.remove('drag-over');
 });
 
-// When user drops a file onto the zone
 dropZone.addEventListener('drop', function(e) {
   e.preventDefault();
   dropZone.classList.remove('drag-over');
@@ -154,12 +152,10 @@ dropZone.addEventListener('drop', function(e) {
   }
 });
 
-// Clicking the drop zone also opens file picker
 dropZone.addEventListener('click', function() {
   fileInput.click();
 });
 
-// Change document type (aadhaar / voter / ration)
 function setDocType(value) {
   currentDocType = value;
 }
