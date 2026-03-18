@@ -164,22 +164,16 @@ function setDocType(value) {
 function handleFile(file) {
   if (!file) return;
 
-  // Save file to variable (stored in browser RAM)
   currentFile = file;
 
-  // Create a preview URL (temporary, only in memory)
   const previewURL = URL.createObjectURL(file);
   imgPreview.src = previewURL;
 
-  // Show file name and size
   document.getElementById('previewName').textContent = file.name;
   document.getElementById('previewSize').textContent =
     (file.size / 1024).toFixed(1) + ' KB';
-
-  // Show the preview row
   previewRow.style.display = 'flex';
 
-  // Hide old results
   document.getElementById('progressCard').style.display   = 'none';
   document.getElementById('extractedCard').style.display  = 'none';
   document.getElementById('formCard').style.display       = 'none';
