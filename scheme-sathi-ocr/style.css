@@ -322,7 +322,6 @@ code {
   font-weight: 500;
 }
 
-/* ---- EXTRACTED DATA ---- */
 .confidence-badge {
   font-size: 12px;
   padding: 3px 10px;
@@ -401,7 +400,6 @@ code {
   overflow-y: auto;
 }
 
-/* ---- FORM ---- */
 .form-note {
   font-size: 13px;
   color: #666;
