@@ -113,7 +113,6 @@ code {
   flex-shrink: 0;
 }
 
-/* ---- FLOW ---- */
 .flow-card { padding: 18px 24px; }
 
 .flow {
@@ -144,8 +143,6 @@ code {
 .flow-icon { font-size: 20px; }
 .flow-label { font-size: 11px; font-weight: 600; color: #2e7d32; }
 .flow-arrow { font-size: 18px; color: #FF9933; font-weight: bold; }
-
-/* ---- DOC TYPE RADIO ---- */
 .doc-type-row {
   display: flex;
   gap: 14px;
@@ -274,7 +271,6 @@ code {
 .extract-btn:active { transform: scale(0.98); }
 .extract-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
 
-/* ---- PROGRESS ---- */
 .progress-bar-wrap { margin-bottom: 14px; }
 
 .progress-bar {
